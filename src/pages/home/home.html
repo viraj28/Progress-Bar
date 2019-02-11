@@ -1,14 +1,42 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Progress Bar
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <p style="text-align: center; font-style: italic;">{{currentDay}}</p>
+  
+  <div>
+    <p style="text-align: center;"> YEAR 
+      <span>
+        <progress-bar [progress]=yearProgress></progress-bar>
+      </span>
+    </p>
+  </div>
+  <div>
+    <p style="text-align: center;"> MONTH 
+      <span>
+        <progress-bar [progress]=monthProgress></progress-bar>
+      </span>
+    </p>
+  </div>
+  <div>
+    <p style="text-align: center;"> WEEK
+      <span>
+        <progress-bar [progress]=weekProgress></progress-bar>
+      </span>
+    </p>
+  </div>
+  <div>
+    <p style="text-align: center;"> DAY 
+      <span>
+        <progress-bar [(progress)]=dayProgress></progress-bar>
+      </span>
+    </p>
+  </div>
+  
+
 </ion-content>
