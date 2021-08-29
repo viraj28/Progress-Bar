@@ -43,6 +43,7 @@
     "glob-parent": ">5.0.1",
     "lodash": ">4.17.21",
     "trim-newlines": ">3.0.1",
+    "y18n": ">=3.2.2",
   },
   "description": "An Ionic project",
   "cordova": {
